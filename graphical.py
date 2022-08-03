@@ -45,7 +45,7 @@ class Graph:
         return self.vertices[value]   #This function returns the object created for some key in the dictionary
 
     def get_next_word(self,current_vertex):
-        self.vertices[current_vertex.value].next_word()
+        return self.vertices[current_vertex.value].next_word()
 
     def create_probability_mappings(self):
         for vertex in self.vertices.values():
